@@ -1,0 +1,100 @@
+@import "reset";
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	//background: green;
+}
+
+.header__img {
+	background-image: url(../../assets/img/banner.png);
+	width: 100%;
+	height: 20vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	@media screen and (min-width: 600px) {
+		height: 40vh;
+		background-position: 0 -50px center;
+	}
+
+	@media screen and (min-width: 900px) {
+			background-position: 0 -50px;
+	}
+
+	@media screen and (min-width: 1200px) {
+			background-position: 0 -100px;
+			height: 40vh;
+	}
+}
+
+.headline {
+	font-family: 'Handlee', cursive;
+	font-size: 5em;
+	text-align: center;
+	margin-top: 5%;
+	color: #EE5F88;
+	text-decoration: underline;
+}
+
+.nav {
+	display: flex;
+	justify-content: center;
+
+	& a {
+		margin: 5%;
+		text-decoration: none;
+		font-family: 'Handlee', cursive;
+		font-size: 2em;
+		color: #27336B;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.addToDoItems {
+	margin-left: 14%;
+	margin-bottom: 5%;
+	display: flex;
+
+	& input {
+		border: 2px solid #EE5F88;
+		font-size: 1.5em;
+		padding: 2%;
+		margin-right: 2%;
+	}
+
+	& button {
+		font-size: 1.5em;
+		font-family: 'Handlee', cursive;
+		background: #27336B;
+		color: #EE5F88;
+		border: 1px solid transparent;
+		padding: 2% 3%;
+	}
+
+}
+
+.toDoItems {
+	margin-left: 10%;
+
+}
+
+.task {
+	font-family: 'Handlee', cursive;
+	font-size: 2em;
+	color: #27336B;
+	line-height: 50px;
+}
+
+#checkBox {
+	margin-right: 2%;
+	font-size: 2em;
+}
