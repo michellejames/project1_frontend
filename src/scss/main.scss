@@ -40,33 +40,48 @@ html, body {
 	margin-top: 5%;
 	color: #EE5F88;
 	text-decoration: underline;
+	margin-bottom: 10%;
+
+	@media screen and (min-width: 600px) {
+		margin-bottom: 0%;
+	}
 }
 
 .nav {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 5%;
+
+	@media screen and (min-width: 600px) {
+		margin-bottom: 0%;
+	}
 
 	& a {
 		margin: 5%;
 		text-decoration: none;
 		font-family: 'Handlee', cursive;
-		font-size: 2em;
+		font-size: 1.5em;
 		color: #27336B;
 
 		&:hover {
 			text-decoration: underline;
 		}
+
+		@media screen and (min-width: 600px) {
+			font-size: 2em;
+		}
 	}
 }
 
 .addToDoItems {
-	margin-left: 14%;
+	display: flex;
+	justify-content: center;
 	margin-bottom: 5%;
 	display: flex;
 
 	& input {
 		border: 2px solid #EE5F88;
-		font-size: 1.5em;
+		font-size: 1em;
 		padding: 2%;
 		margin-right: 2%;
 	}
@@ -97,4 +112,18 @@ html, body {
 #checkBox {
 	margin-right: 2%;
 	font-size: 2em;
+}
+
+.deleteButton {
+	font-size: .7em;
+	font-family: 'Handlee', cursive;
+	background: #27336B;
+	color: #EE5F88;
+	border: 1px solid transparent;
+	padding: 8px;
+	margin-left: 2%;
+}
+
+.done {
+	text-decoration: line-through;
 }
